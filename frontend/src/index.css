@@ -1,0 +1,232 @@
+
+body{
+  width: 100vw;
+  padding: 0px;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+
+main {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+  width: 100vw;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  width: 100%;
+
+}
+
+.page{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+
+label{
+  font-size: 1.2rem;
+  width: 100%;
+  font-weight: 500;
+  
+}
+input{
+  font-size: 0.9rem;
+  font-weight: 500;
+  width: 100%;
+  padding: 0.5rem;
+  box-sizing:border-box
+  
+}
+
+button{
+  text-decoration: none;
+  width: 100%;
+  border: 2px black solid;
+  border-radius: 5px;
+  background-color: white;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 0.5rem;
+  margin: auto;
+  color: black;
+}
+
+button:hover{
+  background-color: rgb(240, 240, 240);
+  cursor: pointer;
+  
+}
+button:active{
+  background-color: rgb(220, 220, 220);
+}
+
+.but-div{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+}
+.in-out-links-div{
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: space-between;
+}
+
+nav{
+
+  width: 100%;
+  height: 15vh;
+  background-color: #BB0B25;
+
+  
+  padding: 0px;
+}
+
+.inner-nav{
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+.logout-but{
+  font-weight: 600;
+  width: 90px;
+  font-size: 1rem ;
+}
+
+.gastools{
+  color: white;
+}
+
+.logo-gas{
+  height: 8rem;
+}
+
+.dar-pontos{
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.select-nomes{
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: large;
+  padding: 0.5rem;
+  box-sizing:border-box;
+  border: 2px black solid;
+  border-radius: 5px;
+  
+}
+
+.input-novos-pontos{
+  box-sizing:border-box;
+  border: 1px black solid;
+  border-radius: 5px;
+}
+
+.dar-pontos-but{
+  width: 40%;
+  padding: 0rem;
+  font-size: large;
+}
+
+
+
+.voltar-but{
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  width: 100%;
+  font-size: large;
+  font-weight: 800;
+  padding: 0.5rem;
+  box-sizing:border-box;
+  border: 2px black solid;
+  border-radius: 5px;
+  margin-top: 10px;
+  background-color: #BB0B25;
+  color: white;
+}
+
+.voltar-but:hover{
+  background-color: #e43c55;
+  
+  cursor: pointer;
+}
+
+.a-voltar-but{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem ;
+}
+
+a{
+  text-decoration: none;
+}
+
+.home-icon{
+  height: 1rem;
+}
+
+
+
+/* dar-pontos is 90vw in mobile devices and 50vw on laptops */
+@media (max-width: 600px) {
+  .dar-pontos{
+    width: 90vw;
+  }
+  .form-section{
+    width: 90vw;
+  }
+  /* hide gas tools class */
+  .gastools{
+    display: none;
+  }
+
+}
+
+@media (min-width: 600px) {
+  .dar-pontos{
+    width: 50vw;
+  }
+  .form-section{
+    width: 50vw;
+  }
+}
